@@ -88,6 +88,11 @@ void ExportBefehl::exec(std::vector<std::string> &args)
             out << '"' << i << "\";\"" << pal->anzahl() << "\";\"" << pal->ware() << "\";\"" << pal->lagerbedingungen() << "\";\"" << pal->defekt() << '"' << std::endl;
         }
     }
+
+    out.close();
+    std::string target_command = args[0] + ".csv";
+    system(target_command.c_str());
+
 }
 
 void ExportBefehl::help()

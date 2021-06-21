@@ -20,6 +20,8 @@ void BackupBefehl::exec(std::vector<std::string> &args)
             out << '"' << i << "\";\"" << pal->anzahl() << "\";\"" << pal->ware() << "\";\"" << pal->lagerbedingungen() << "\";\"" << pal->defekt() << '"' << std::endl;
         }
     }
+    out.close();
+    system("paletten.csv");
 }
 
 void BackupBefehl::help()
