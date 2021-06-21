@@ -20,6 +20,7 @@ SOURCES += \
         befehl.cpp \
         befehle/backupbefehl.cpp \
         befehle/exitbefehl.cpp \
+        befehle/exportbefehl.cpp \
         befehle/getpalettebefehl.cpp \
         befehle/listtempsensorenbefehl.cpp \
         befehle/removelagerbedingungenbefehl.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
         befehl.h \
         befehle/backupbefehl.h \
         befehle/exitbefehl.h \
+        befehle/exportbefehl.h \
         befehle/getpalettebefehl.h \
         befehle/listtempsensorenbefehl.h \
         befehle/removelagerbedingungenbefehl.h \

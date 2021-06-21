@@ -30,5 +30,5 @@ void BackupBefehl::help()
 static const std::string beschreibung = "Speichert eine CSV-Datei als Backup ab.";
 const std::string &BackupBefehl::desc() const
 {
-
+    return beschreibung;
 }
