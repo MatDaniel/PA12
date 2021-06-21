@@ -21,6 +21,7 @@
 #include "befehle/setlagerbedingungenbefehl.h"
 #include "befehle/removelagerbedingungenbefehl.h"
 #include "befehle/backupbefehl.h"
+#include "befehle/exportbefehl.h"
 
 // Typen Shortcuts
 typedef std::map<std::string, Befehl*> BefehlMap;
@@ -69,7 +70,7 @@ int main(int argc, char *argv[])
     befehle["set-lagerbedingungen"] = new SetLagerbedingungenBefehl(halle.regalController());
     befehle["remove-lagerbedingungen"] = new RemoveLagerbedingungenBefehl(halle.regalController());
     befehle["backup"] = new BackupBefehl(halle.regalController());
-
+    befehle["export"] = new ExportBefehl(halle.regalController());
 
     // Hier wird der rohe, unverarbeitete Befehl abgespeichert.
     std::string raw_command;
