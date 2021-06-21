@@ -20,6 +20,7 @@
 #include "befehle/transferpalettebefehl.h"
 #include "befehle/setlagerbedingungenbefehl.h"
 #include "befehle/removelagerbedingungenbefehl.h"
+#include "befehle/backupbefehl.h"
 
 // Typen Shortcuts
 typedef std::map<std::string, Befehl*> BefehlMap;
@@ -67,6 +68,7 @@ int main(int argc, char *argv[])
     befehle["transfer-palette"] = new TransferPaletteBefehl(halle.regalController());
     befehle["set-lagerbedingungen"] = new SetLagerbedingungenBefehl(halle.regalController());
     befehle["remove-lagerbedingungen"] = new RemoveLagerbedingungenBefehl(halle.regalController());
+    befehle["backup"] = new BackupBefehl(halle.regalController());
 
 
     // Hier wird der rohe, unverarbeitete Befehl abgespeichert.

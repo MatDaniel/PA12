@@ -23,7 +23,7 @@ static void printPaletteInfo(const Palette* palette, szT index, uiT regal, uiT r
     else
     {
 
-        std::cout << "-- Informationen zur Palette " << index << " { " << regal << ", " << reihe << ", " << zelle << " } --" << std::endl;
+        std::cout << std::endl << "-- Informationen zur Palette " << index << " { " << regal << ", " << reihe << ", " << zelle << " } --" << std::endl << std::endl;
 
         if (palette->empty())
         {
@@ -43,6 +43,8 @@ static void printPaletteInfo(const Palette* palette, szT index, uiT regal, uiT r
         {
             std::cout << "Warnung: Die Palette ist als `defekt` gekennzeichnet!" << std::endl;
         }
+
+        std::cout << std::endl << "-- Informationen zur Palette " << index << " { " << regal << ", " << reihe << ", " << zelle << " } --" << std::endl << std::endl;
 
     }
 

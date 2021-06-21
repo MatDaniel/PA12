@@ -101,6 +101,12 @@ public:
      */
     Palette& operator=(const Palette&);
 
+    /**
+     * @brief Vergleicht, ob die zwei Paletten gleich sind.
+     * @return Gibt `true` zurück, wenn sie gleich sind, ansonsten `false`.
+     */
+    bool operator==(const Palette&) const noexcept;
+
 private:
     unsigned int m_anzahl;
     std::string m_ware;

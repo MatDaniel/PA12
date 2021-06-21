@@ -70,3 +70,11 @@ Palette &Palette::operator=(const Palette& other)
     m_defekt = other.m_defekt;
     return *this;
 }
+
+bool Palette::operator==(const Palette &other) const noexcept
+{
+    return m_ware == other.m_ware
+            && m_anzahl == other.m_anzahl
+            && m_lagerbedingungen == other.m_lagerbedingungen
+            && m_defekt == other.m_defekt;
+}

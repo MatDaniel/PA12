@@ -22,7 +22,7 @@ void SetWareBefehl::exec(std::vector<std::string> &args)
 
             // Bekomme alle Argumente
             szT index = std::stoull(args[0]);
-            const std::string& ware = args[1];
+            std::string& ware = args[1];
             uiT anzahl = args.size() > 2 ? std::stoul(args[2]) : 1;
 
             // Suche die Palette.
@@ -39,6 +39,10 @@ void SetWareBefehl::exec(std::vector<std::string> &args)
             else
             {
 
+                // Ersetze Gänsefüßchen durch Abstände
+                for (char& c : ware) if (c == '"') c = ' ';
+
+                // Setze Sachen
                 palette->setWare(ware);
                 palette->setAnzahl(anzahl);
                 palette->setLagerbedingungen();

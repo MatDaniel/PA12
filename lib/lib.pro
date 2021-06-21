@@ -18,6 +18,7 @@ CONFIG -= app_bundle qt
 
 SOURCES += \
         befehl.cpp \
+        befehle/backupbefehl.cpp \
         befehle/exitbefehl.cpp \
         befehle/getpalettebefehl.cpp \
         befehle/listtempsensorenbefehl.cpp \
@@ -40,6 +41,7 @@ SOURCES += \
 
 HEADERS += \
         befehl.h \
+        befehle/backupbefehl.h \
         befehle/exitbefehl.h \
         befehle/getpalettebefehl.h \
         befehle/listtempsensorenbefehl.h \
