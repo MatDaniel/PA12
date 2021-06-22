@@ -97,10 +97,10 @@ void ExportBefehl::exec(std::vector<std::string> &args)
 
 void ExportBefehl::help()
 {
-    std::cout << "export free @ Speichert eine die CSV-Datei `free.csv` im Arbeitsverzeichnis ab mit leeren Stellpl" << c_ae << "tzen" << std::endl
-              << "export empty @ Speichert eine die CSV-Datei `empty.csv` im Arbeitsverzeichnis ab mit leeren Paletten" << std::endl
-              << "export filled @ Speichert eine die CSV-Datei `filled.csv` im Arbeitsverzeichnis ab mit gef" << c_ue << "llten Paletten" << std::endl
-              << "export defekt @ Speichert eine die CSV-Datei `defekt.csv` im Arbeitsverzeichnis ab mit defekten Stellpl" << c_ae << "tzen" << std::endl;
+    std::cout << "export free @ Speichert eine CSV-Datei `free.csv` im Arbeitsverzeichnis ab mit leeren Stellpl" << c_ae << "tzen" << std::endl
+              << "export empty @ Speichert eine CSV-Datei `empty.csv` im Arbeitsverzeichnis ab mit leeren Paletten" << std::endl
+              << "export filled @ Speichert eine CSV-Datei `filled.csv` im Arbeitsverzeichnis ab mit gef" << c_ue << "llten Paletten" << std::endl
+              << "export defekt @ Speichert eine CSV-Datei `defekt.csv` im Arbeitsverzeichnis ab mit defekten Stellpl" << c_ae << "tzen" << std::endl;
 }
 
 static const std::string beschreibung = std::string("Speichert eine CSV-Datei mit den ausgew") + c_ae + "hlten Paletten ab.";
